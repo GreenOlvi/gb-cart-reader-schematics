@@ -558,6 +558,10 @@
       {
         "netclass": "signal",
         "pattern": "/Serial_Chain"
+      },
+      {
+        "netclass": "power",
+        "pattern": "/Address_Latch"
       }
     ]
   },
