@@ -6,10 +6,10 @@
 	(paper "A4")
 	(title_block
 		(title "Arduino GB cart connector v2")
-		(date "2023-08-19")
-		(rev "1")
+		(date "2025-11-11")
+		(rev "2")
 		(company "Piotr Szulc")
-		(comment 1 "https://github.com/GreenOlvi/gb-cart-arduino")
+		(comment 1 "https://github.com/GreenOlvi/gb-cart-reader-schematics")
 	)
 	(lib_symbols
 		(symbol "1_my_custom_library:GB_cartridge_connector"
