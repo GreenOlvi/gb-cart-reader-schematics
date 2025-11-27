@@ -58,12 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "silk_over_copper|102025000|89500000|0739ee28-b570-4380-987a-42a8266c1134|00000000-0000-0000-0000-000000000000",
-          "need to fix the footprint"
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -563,10 +558,6 @@
       {
         "netclass": "signal",
         "pattern": "/Serial_Chain"
-      },
-      {
-        "netclass": "power",
-        "pattern": "/Address_Latch"
       },
       {
         "netclass": "signal",
