@@ -465,8 +465,14 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_footprint_libs": [
+      "1_my_custom_library",
+      "gb-cart"
+    ],
+    "pinned_symbol_libs": [
+      "1_my_custom_library",
+      "gb-cart"
+    ]
   },
   "meta": {
     "filename": "gb-cart-arduino-v2.kicad_pro",

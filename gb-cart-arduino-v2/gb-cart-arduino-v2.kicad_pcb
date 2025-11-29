@@ -2073,12 +2073,12 @@
 			)
 		)
 	)
-	(footprint "1_my_custom_library:Gameboy cartridge connector"
+	(footprint "gb-cart:Gameboy cartridge connector"
 		(layer "F.Cu")
 		(uuid "52d530b9-b66d-43a8-8c3a-a4b225ea0b35")
 		(at 133.5 101)
 		(property "Reference" "U3"
-			(at -2 -8 0)
+			(at 4 -3 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "67a6d786-3897-44ce-afea-f2fc9accf080")
@@ -2087,10 +2087,11 @@
 					(size 1 1)
 					(thickness 0.1)
 				)
+				(justify right bottom)
 			)
 		)
 		(property "Value" "~"
-			(at -2 -6 0)
+			(at 0 -18.5 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "d5e8636c-ab66-4874-908e-23aeca2a37cf")
@@ -2140,7 +2141,7 @@
 			)
 			(fill no)
 			(layer "F.SilkS")
-			(uuid "f8abd265-050e-433c-8901-71753f199d88")
+			(uuid "3530d351-cf39-45bf-bdb1-64ce960a8813")
 		)
 		(fp_text user "GB cartridge"
 			(at -5 -21 0)
@@ -2156,7 +2157,7 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at -1 -4 0)
+			(at -1 -16.5 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "e7636cdf-3e6a-4180-837f-89ae63ba20fd")
@@ -2172,28 +2173,28 @@
 			(size 4.52 3.82)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.15)
-			(uuid "b4ad85e5-9fe4-41ff-9440-a1aa321623b2")
+			(uuid "91ba8b63-72f6-4988-8809-77a35dfd02f5")
 		)
 		(pad "" np_thru_hole circle
 			(at -36.25 -7.9)
 			(size 2 2)
 			(drill 2)
 			(layers "*.Cu" "*.Mask")
-			(uuid "0bbe5b11-011b-4fe9-aae4-76833e72ddbe")
+			(uuid "be427043-1b62-438a-b90c-1662ae04ff47")
 		)
 		(pad "" smd roundrect
 			(at -10.25 -19.3)
 			(size 4.52 3.82)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.15)
-			(uuid "8839ddde-728d-4c4c-a963-2a7951a208d5")
+			(uuid "b2fbb901-051e-47bd-8a2d-6457b3e5a05e")
 		)
 		(pad "" np_thru_hole circle
 			(at -10.25 -7.9)
 			(size 2.1 2.1)
 			(drill 2)
 			(layers "*.Cu" "*.Mask")
-			(uuid "7c3cdaf6-ca93-4ef1-8c02-63f9b9d3a44a")
+			(uuid "9f1f72e1-c301-41a9-afa0-8d084abe8dbd")
 		)
 		(pad "1" smd roundrect
 			(at -46.5 0 90)
@@ -2519,7 +2520,7 @@
 			(net 0)
 			(net_name "")
 			(layers "F.SilkS" "F.CrtYd")
-			(uuid "79fa3111-33bf-41b0-95be-55b576a25cfe")
+			(uuid "b6a64fcf-1a2e-4c5b-b3b3-64b61bb005a2")
 			(hatch edge 0.5)
 			(connect_pads
 				(clearance 0)
@@ -5012,6 +5013,30 @@
 				(thickness 0.15)
 			)
 			(justify left)
+		)
+	)
+	(gr_text "v2.1"
+		(at 137.5 82.5 0)
+		(layer "B.SilkS")
+		(uuid "d1fcdf5a-59f0-41fd-9d28-2cc097119e40")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "https://github.com/GreenOlvi/gb-cart-reader-schematics"
+		(at 138 80 0)
+		(layer "B.SilkS")
+		(uuid "d7b6c30f-c145-4085-87c2-ed9048971fdf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom mirror)
 		)
 	)
 	(segment
