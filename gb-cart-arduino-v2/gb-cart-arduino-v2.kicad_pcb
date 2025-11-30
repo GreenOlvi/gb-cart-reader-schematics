@@ -113,7 +113,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "gerber/")
+			(outputdirectory "out/")
 		)
 	)
 	(net 0 "")
@@ -163,7 +163,6 @@
 		(property "Reference" "U1"
 			(at 0 -6.15 0)
 			(layer "F.SilkS")
-			(hide yes)
 			(uuid "c04ad065-bf62-4528-b272-3cdb92cce8a0")
 			(effects
 				(font
@@ -2081,6 +2080,7 @@
 			(at 4 -3 0)
 			(unlocked yes)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "67a6d786-3897-44ce-afea-f2fc9accf080")
 			(effects
 				(font
@@ -5016,7 +5016,7 @@
 		)
 	)
 	(gr_text "v2.1"
-		(at 137.5 82.5 0)
+		(at 138 82.5 0)
 		(layer "B.SilkS")
 		(uuid "d1fcdf5a-59f0-41fd-9d28-2cc097119e40")
 		(effects
