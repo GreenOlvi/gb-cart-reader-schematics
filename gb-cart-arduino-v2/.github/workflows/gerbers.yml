@@ -1,0 +1,26 @@
+on: [push]
+
+jobs:
+    build-gerbers:
+        runs-on: ubuntu-latest
+        name: Generate Gerber Files
+        steps:
+        - name: Checkout repository
+          uses: actions/checkout@v4
+    
+        - name: Install dependencies
+          run: sudo apt-get install -y kicad
+    
+        - name: Generate Gerber files
+          run: |
+            mkdir -p output/gerbers
+            kicad-cli pcb export gerbers gb-cart-arduino-v2.kicad_pcb --output output/gerbers
+            kicad-cli pcb export drill gb-cart-arduino-v2.kicad_pcb --output output/gerbers
+    
+        - name: Upload Gerber files
+          uses: actions/upload-artifact@v4
+          with:
+            name: gerber-files
+            path: |
+                output/gerbers/*.gbr 
+                output/gerbers/*.drl
